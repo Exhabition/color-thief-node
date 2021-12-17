@@ -17,7 +17,7 @@
  * @license
  */
 
-const { loadImage } = require('canvas');
+const { loadImage } = require('skia-canvas');
 
 const CanvasImage = require('./canvas-image');
 const { quantize } = require('./mmcq');

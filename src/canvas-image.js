@@ -1,4 +1,4 @@
-const { createCanvas } = require('canvas');
+const { Canvas } = require('skia-canvas');
 
 /**
  * CanvasImage Class
@@ -10,7 +10,7 @@ module.exports = class CanvasImage {
     constructor(image) {
         const { width, height } = image;
 
-        this.canvas = createCanvas(width, height);
+        this.canvas = new Canvas(width, height);
         this.context = this.canvas.getContext('2d');
 
         this.width = width;

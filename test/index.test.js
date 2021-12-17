@@ -12,7 +12,7 @@ const chalk = require('chalk');
             'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Firefox_Logo%2C_2017.svg/1024px-Firefox_Logo%2C_2017.svg.png'
         ];
 
-        for (i = 0; i < imageURLs.length; i++) {
+        for (let i = 0; i < imageURLs.length; i++) {
             const dominantColor = await getColorFromURL(imageURLs[i]);
             const colorPalette = await getPaletteFromURL(imageURLs[i]);
             const [r, g, b] = dominantColor;
